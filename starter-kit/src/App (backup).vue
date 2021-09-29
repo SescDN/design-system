@@ -3,17 +3,7 @@
 		<botao>Texto</botao>
 		<botao class="alerta">Texto</botao>
 		<botao class="cancelar" ref="botao">Texto</botao>
-		<botao class="confirmar" :loading="loading" @click="remove">Texto</botao>
-
-		<v-btn
-			:loading="loading"
-			class="ma-1"
-			color="error"
-			plain
-			@click="remove"
-		>
-		Delete
-		</v-btn>
+		<botao class="confirmar" @click="funcao" :loadingX="false">Texto</botao>
 	</v-app>
 </template>
 
@@ -25,7 +15,7 @@
 
 <script>
 	import botao from "./design-system/components/botao/botao.vue";
-		
+
 	export default {
 		name: "App",
 
@@ -34,16 +24,12 @@
 		},
 
 		methods: {
-			funcao() {
-			},
+			funcao: function(event) {
+				alert(event.target.getAttribute('loadingX'));
+				alert(this.loadingX);
 
-			async remove () {
-				this.loading = true;
-
-				await new Promise(resolve => setTimeout(resolve, 3000));
-
-				this.loading = false;
-			},
-		},
-  }
+				// this.$refs.botao.loading = false;
+			}
+		}
+	};
 </script>

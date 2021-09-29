@@ -1,24 +1,24 @@
-# Starter Kit SESC DN
+# starterkit-2.0
 
-## Iniciar projeto com install para instalar todas as dependências
+## Project setup
 ```
 yarn install
 ```
 
-### Compilar o código
+### Compiles and hot-reloads for development
 ```
 yarn serve
 ```
 
-### Compilar e minificar os arquivos para dar Build
+### Compiles and minifies for production
 ```
 yarn build
 ```
 
-### Lints e corrigir código
+### Lints and fixes files
 ```
 yarn lint
 ```
 
-### Referências do Vue
+### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

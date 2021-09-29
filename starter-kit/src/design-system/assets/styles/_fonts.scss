@@ -1,0 +1,57 @@
+// declaração da Libre Franklin
+@font-face {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+	src: url('/src/designsystem/assets/fonts/librefranklin.ttf') format('truetype-variations');
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    font-style: italic;
+	src: url('/src/designsystem/assets/fonts/librefranklin.ttf') format('truetype-variations');
+}
+
+// variáveis
+$light: 300;
+$regular: 400;
+$medium: 500;
+
+// atribuições
+h1, h2, h3, h4, h5, h6, p, a, span, li {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: $medium;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: $regular;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: $regular;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: $regular;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: $regular;
+}
+
+h6 {
+    font-size: 14px;
+    font-weight: $regular;
+}
+
+p, span, li {
+    font-size: 14px;
+    font-weight: $regular;
+}
